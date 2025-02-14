@@ -30,32 +30,42 @@
 </head>
 <body>
   
-  <header class="flex flex-row items-center justify-around mx-6 my-4  max-md:justify-between max-md:mx-3">
-    <!-- menu icon  -->
-    <img src="icons/hamburger-menu-icon.svg" alt="" class="w-[20px] md:hidden ">
-    <!-- logo img  -->
-    
-    <img src="logo.png" alt="logo image" class="max-md:mx-4">
-    
-    <nav class=" max-md:hidden"> 
-        <ul class="flex   ">
-            <div class="">
-              <li><a class="link_drop flex  px-2 hover:bg-gray-200 rounded-xl items-center mx-1" href="#">Demos <img class="ml-[5px] mt-1" src="icons/icon_9.png" alt=""></a></li>
-              <div class="drop_down bg-gray-600 hidden text-white">
-                <li><a class="flex  px-2 hover:bg-gray-500 rounded-xl items-center mx-1 my-[1px]" href="#">page1</a></li>
-                <li><a class="flex  px-2 hover:bg-gray-500 rounded-xl items-center mx-1 my-[1px]" href="#">page2</a></li>
-                <li><a class="flex  px-2 hover:bg-gray-500 rounded-xl items-center mx-1 my-[1px]" href="#">page3</a></li>
-              </div>
-            </div>
-            <li><a class="flex  px-2 hover:bg-gray-200 rounded-xl items-center mx-1" href="#">Pages <img class="ml-[5px] mt-1" src="icons/icon_9.png" alt=""></a></li>
-            <li><a class="flex  px-2 hover:bg-gray-200 rounded-xl items-center mx-1" href="#projects">Projects <img class="ml-[5px] mt-1" src="icons/icon_9.png" alt=""></a></li>
-            <li><a class="flex  px-2 hover:bg-gray-200 rounded-xl items-center mx-1" href="#">Blog <img class="ml-[5px] mt-1" src="icons/icon_9.png" alt=""></a></li>
-            <li><a class="flex  px-2 hover:bg-gray-200 rounded-xl items-center mx-1" href="#">Blocks <img class="ml-[5px] mt-1" src="icons/icon_9.png" alt=""></a></li>
-            <li><a class="flex  px-2 hover:bg-gray-200 rounded-xl items-center mx-1" href="#">Documentery<img class="ml-[5px] mt-1" src="icons/icon_9.png" alt=""></a></li>
+  <header class="flex items-center justify-between px-6 py-4 max-md:px-3">
+    <!-- Mobile Menu Icon -->
+    <button id="menu-btn" class="md:hidden">
+        <img src="icons/hamburger-menu-icon.svg" alt="Menu" class="w-[24px]">
+    </button>
+
+    <!-- Logo -->
+    <img src="logo/logo.png" alt="Logo" class="h-6 max-md:h-5">
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex">
+        <ul class="flex space-x-4">
+            <li><a class="px-3 py-2 hover:bg-gray-200 rounded-lg" href="#">Demos</a></li>
+            <li><a class="px-3 py-2 hover:bg-gray-200 rounded-lg" href="#">Pages</a></li>
+            <li><a class="px-3 py-2 hover:bg-gray-200 rounded-lg" href="#projects">Projects</a></li>
+            <li><a class="px-3 py-2 hover:bg-gray-200 rounded-lg" href="#">Blog</a></li>
+            <li><a class="px-3 py-2 hover:bg-gray-200 rounded-lg" href="#">Blocks</a></li>
+            <li><a class="px-3 py-2 hover:bg-gray-200 rounded-lg" href="#">Documentary</a></li>
         </ul>
     </nav>
-    <button class="px-4 py-2 bg-blue-400 text-white rounded-full">Contact</button>
+
+    <!-- Contact Button -->
+    <button class="px-4 py-2 bg-blue-400 text-white rounded-full max-md:px-3 max-md:py-1">Contact</button>
 </header>
+
+<!-- Mobile Menu -->
+<nav id="mobile-menu" class="hidden flex-col bg-white shadow-md p-4 absolute top-[60px] left-0 w-full md:hidden">
+    <ul class="space-y-3">
+        <li><a class="block px-4 py-2 hover:bg-gray-200 rounded-lg" href="#">Demos</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200 rounded-lg" href="#">Pages</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200 rounded-lg" href="#projects">Projects</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200 rounded-lg" href="#">Blog</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200 rounded-lg" href="#">Blocks</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200 rounded-lg" href="#">Documentary</a></li>
+    </ul>
+</nav>
 
 <!-- section one  -->
 <section class=" ">
@@ -570,7 +580,7 @@
            <!-- main foter  -->
            <div class=" grid grid-cols-4 gap-4 max-lg:grid-cols-2 max-sm:grid-cols-1 justify-around px-5 ">
             <div class="flex flex-col gap-4">
-              <img src="logo-light.png" alt="" class="w-[150px]">
+              <img src="logo/logo-light.png" alt="" class="w-[150px]">
               <h4 class="text-slate-300 font-light"><i class="mr-1 fa-regular fa-copyright"></i> 2023 Sandbox</h4>
               <h4 class="text-slate-300 font-light">All rights reserved</h4>
               <!-- social-icons -->
